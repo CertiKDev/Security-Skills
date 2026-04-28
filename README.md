@@ -12,7 +12,7 @@ This skill has not been uploaded to the Claude Marketplace yet. Please download 
 
 | Plugin | Description |
 |--------|-------------|
-| [Secure Development](plugins/secure-development/) | Development-time security guidance and iterative code review for Cardano Plutus, and Cardano Aiken smart contracts. It helps developers catch platform-specific design, authorization, privacy, invariant, and performance issues before formal audit. |
+| [Secure Development](plugins/Secure-Development/) | Development-time security guidance and iterative code review for Cardano Plutus, and Cardano Aiken smart contracts. It helps developers catch platform-specific design, authorization, privacy, invariant, and performance issues before formal audit. |
 
 ### Smart Contract Security — Auditing
 
