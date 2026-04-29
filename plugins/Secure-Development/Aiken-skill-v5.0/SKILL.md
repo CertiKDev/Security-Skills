@@ -778,6 +778,7 @@ protocol-specific value relation, state transition, and authority model.
 When the Pre-Audit Readiness table shows all criteria met, recommend transitioning to a
 dedicated audit skill or professional auditor for formal pre-deployment review. See G11.
 
+---
 
 > Copyright 2026 CertiK
 > 
