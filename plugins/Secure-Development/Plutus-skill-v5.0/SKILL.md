@@ -483,3 +483,19 @@ Do not attempt a partial review of out-of-scope material.
 - If a line-precise claim is not supported by the artifact, make the claim less precise rather than asserting it at higher confidence.
 - Do not claim success without explicit evidence.
 - The Behavior Guards (G1–G9) and Self-Audit Protocol (SA-1–SA-13) are non-negotiable. When in doubt, apply the more conservative classification.
+
+---
+
+> Copyright 2026 CertiK
+> 
+> Licensed under the Apache License, Version 2.0 (the "License");
+> you may not use this file except in compliance with the License.
+> You may obtain a copy of the License at
+> 
+> http://www.apache.org/licenses/LICENSE-2.0
+> 
+> Unless required by applicable law or agreed to in writing, software
+> distributed under the License is distributed on an "AS IS" BASIS,
+> WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+> See the License for the specific language governing permissions and
+> limitations under the License.
