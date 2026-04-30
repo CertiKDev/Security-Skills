@@ -1,4 +1,4 @@
-# Security-skills
+# Security-Skills
 A Claude Code plugin marketplace from CertiK providing skills for smart contract security across multiple blockchain platforms. Skills cover both secure development and auditing workflows, with platform-specific coverage that expands over time.
 
 
