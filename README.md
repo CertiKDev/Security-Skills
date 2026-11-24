@@ -18,7 +18,7 @@ This skill has not been uploaded to the Claude Marketplace yet. Please download 
 
 | Plugin | Description |
 |--------|-------------|
-| [Security Audit](plugins/Security-Audit/) | Structured security audit skills and checklists for DAML smart contracts on Canton and the Bitcoin ecosystem, including Clarity contracts, PSBT signing flows, Ordinals/BRC-20/Runes marketplaces, BTC staking protocols, and Lightning Network dApps. |
+| [Security Audit](plugins/Security-Audit/) | Structured security audit skills and checklists for DAML smart contracts on Canton and the Bitcoin ecosystem, including Clarity contracts, CashScript contracts on Bitcoin Cash, PSBT signing flows, Ordinals/BRC-20/Runes marketplaces, BTC staking protocols, and Lightning Network dApps. |
 
 ## Roadmap
 
