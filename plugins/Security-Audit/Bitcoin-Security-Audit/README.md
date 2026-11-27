@@ -1,10 +1,10 @@
 # Bitcoin Security Audit
 
-Structured security audit checklists for the **Bitcoin ecosystem** — covering Clarity smart contracts, PSBT signing flows, Ordinals/BRC-20/Runes marketplaces, BTC staking protocols, and Lightning Network dApps. Each skill walks an auditor through a checklist of numbered checkpoints grounded in real-world incidents and documented attack patterns. Every checkpoint follows a four-stage reasoning structure — Identify, Analyze, Exploitability, Check — so that findings are evidence-grounded rather than speculative.
+Structured security audit checklists for the **Bitcoin ecosystem** — covering Clarity smart contracts, CashScript contracts on Bitcoin Cash, PSBT signing flows, Ordinals/BRC-20/Runes marketplaces, BTC staking protocols, and Lightning Network dApps. Each skill walks an auditor through a checklist of numbered checkpoints grounded in real-world incidents and documented attack patterns. Every checkpoint follows a four-stage reasoning structure — Identify, Analyze, Exploitability, Check — so that findings are evidence-grounded rather than speculative.
 
 ## Skills
 
-The five skills cover distinct Bitcoin-ecosystem audit domains. A dispatcher (`skills/SKILL.md`) routes requests to the correct skill by matching keywords in the user's prompt; it never auto-executes and always waits for user confirmation. A project may match multiple skills — for example, an Ordinals marketplace with custom PSBT signing would trigger both the marketplace and PSBT skills.
+The six skills cover distinct Bitcoin-ecosystem audit domains. A dispatcher (`skills/SKILL.md`) routes requests to the correct skill by matching keywords in the user's prompt; it never auto-executes and always waits for user confirmation. A project may match multiple skills — for example, an Ordinals marketplace with custom PSBT signing would trigger both the marketplace and PSBT skills.
 
 ### `/audit-clarity-general` — Clarity Smart Contract Audit
 
@@ -53,6 +53,19 @@ Security audit for Babylon-style Bitcoin staking protocol implementations.
 - Delegation trust boundary violations
 - Reward distribution exploits and bridge/checkpoint integrity gaps
 - SDK patterns (`@babylonlabs-io/btc-staking-ts`)
+
+### `/audit-cashscript-general` — CashScript / CashTokens Contract Audit
+
+Security audit for CashScript covenants and multi-contract DeFi systems on Bitcoin Cash.
+
+**Coverage**:
+- Authority containment across co-spent contracts: minting and mutable NFT budgets, single-use credentials, token-only authentication, function NFTs
+- Transaction composition: input index pinning, sidecar adjacency, selector choice, free outputs and double satisfaction
+- State encoding: commitment layouts, signed decoding, `unsafe_bytesN`, `toPaddedBytes` widths, rounding and zero-divisor bricks
+- Time: `tx.locktime` enforcement and backdating, resettable relative timelocks, period catch-up and keeper-reported accrual
+- UTXO DeFi economics: oracle thread choice and staleness, fixed-supply reserves, privileged signers and migration
+- Liveness and build: dust, VM cost and standardness, contention, artifacts, compiler options and constructor arguments
+- SDK patterns (`cashscript`, `cashc`, `@bitauth/libauth`)
 
 ### `/audit-ln-dapp-general` — Lightning Network dApp Audit
 

@@ -10,7 +10,7 @@ The two subfolders cover meaningfully different audit domains and route to the a
 
 ### `/Bitcoin-Security-Audit` -- Bitcoin Ecosystem Audit Dispatcher
 
-Structured security audit checklists for Clarity smart contracts, PSBT signing flows, Ordinals/BRC-20/Runes marketplaces, BTC staking protocols, and Lightning Network dApps.
+Structured security audit checklists for Clarity smart contracts, CashScript contracts on Bitcoin Cash, PSBT signing flows, Ordinals/BRC-20/Runes marketplaces, BTC staking protocols, and Lightning Network dApps.
 
 A dispatcher (`skills/SKILL.md`) routes requests to the correct Bitcoin audit skill by matching project context and user intent. It never auto-executes and waits for confirmation when multiple Bitcoin domains may apply.
 
@@ -19,6 +19,7 @@ A dispatcher (`skills/SKILL.md`) routes requests to the correct Bitcoin audit sk
 - `/audit-psbt-security` -- PSBT construction and signing audit for BIP-174 / BIP-370 flows
 - `/audit-btc-marketplace-general` -- Ordinals, BRC-20, and Runes marketplace audit
 - `/audit-btc-staking-general` -- Babylon-style BTC staking protocol audit
+- `/audit-cashscript-general` -- CashScript and CashTokens contract audit on Bitcoin Cash
 - `/audit-ln-dapp-general` -- Lightning Network dApp audit
 
 **Coverage**:
@@ -26,6 +27,7 @@ A dispatcher (`skills/SKILL.md`) routes requests to the correct Bitcoin audit sk
 - PSBT sighash misuse, input/output injection, UTXO verification, fee manipulation, Taproot trust confusion, MuSig2 nonce safety, and finalization integrity
 - Ordinals marketplace listing manipulation, inscription UTXO handling, indexer trust, front-running, sniping, and platform trust boundaries
 - BTC staking covenant bypasses, EOTS slashing failures, timelock manipulation, delegation trust boundaries, rewards, and checkpoint integrity
+- CashScript authority containment across co-spent contracts, input index and sidecar composition, commitment layouts, locktime enforcement, resettable relative timelocks, oracle thread choice and staleness, and fixed-supply reserves
 - Lightning preimage exposure, payment hash reuse, HTLC state machine flaws, swap non-atomicity, force-close fee budgets, replacement cycling, and watchtower assumptions
 
 **Audit style**: checklist-driven review. Every checkpoint follows a four-stage reasoning structure: Identify vulnerable code, Analyze severity, assess Exploitability with concrete attack scenarios, then Check validation steps.

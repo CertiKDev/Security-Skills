@@ -1,0 +1,4 @@
+interface:
+  display_name: "CashScript Contract Audit"
+  short_description: "Checklist for CashScript and CashTokens security on Bitcoin Cash: authority containment across co-spent contracts, commitment encoding, time and period logic, oracle and reserve economics, and VM and build pitfalls."
+  default_prompt: "Audit these CashScript contracts for minting and mutable NFT containment, single-use credentials that survive, token-only authentication, unpinned input indices and free outputs, sidecar adjacency, selector choice, commitment layout and signed decoding, rounding and zero-divisor bricks, unenforced or backdated locktime, resettable relative timelocks, period catch-up, unreported interest on exit, fixed-supply reserve exhaustion, oracle thread choice and staleness, migration authority, dust and VM budget limits, and artifact or constructor argument mismatches."
